@@ -18,6 +18,11 @@ header {
 	padding: 20px 0;
 }
 
+.form-wrapper {
+	max-width: 667px;
+	margin: 0 auto;
+}
+
 h1 {
 	font-size: 1.3em;
 }
@@ -51,8 +56,6 @@ em {
 form {
 	padding: 0 5%;
 	border: 0;
-	max-width: 667px;
-	margin: 0 auto;
 }
 
 fieldset {
@@ -112,19 +115,16 @@ textarea {
 	border-radius: 5px;
 }
 
-::-webkit-input-placeholder {
-   text-align: right;
+.contact ::-webkit-input-placeholder {
+	text-align: right; 
 }
-
-:-moz-placeholder { /* Firefox 18- */
-   text-align: right;  
+.contact :-moz-placeholder /* Firefox 18- */ {
+	text-align: right; 
 }
-
-::-moz-placeholder {  /* Firefox 19+ */
-   text-align: right;  
+.contact ::-moz-placeholder /* Firefox 19+ */{
+	text-align: right; 
 }
-
-:-ms-input-placeholder {  
+.contact :-ms-input-placeholder {  
    text-align: right; 
 }
 
@@ -204,6 +204,8 @@ input:focus,
 textarea:focus {
 	outline: none;
 	border: 2px solid #2D3945;
+	background: #D7D8D8;
+	transition: background-color 0.5s ease;
 }
 
 input:not(:focus):invalid {
@@ -227,7 +229,7 @@ input[type="submit"] {
 	Media Queries
 ------------------------- */
 
-@media screen and (min-width: 667px) {
+@media screen and (min-width: 760px) {
 	
 	.contact label {
 		display: inline-block;
@@ -248,5 +250,23 @@ input[type="submit"] {
 
 	#zip {
 		width: 30%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+
+	header,
+	h1,
+	input[type="submit"] {
+		background: tomato;
+	}
+
+	body {
+		color: tomato;
+	}
+
+	.form-header,
+	.contact {
+		border-color: tomato;
 	}
 }
