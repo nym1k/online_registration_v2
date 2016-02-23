@@ -1,0 +1,252 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Merriweather', Serif;
+}
+
+body {
+	font-size: 16px;
+	color: #2D3945;
+	min-width: 320px;
+}
+
+header {
+	background: #2D3945;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+}
+
+h1 {
+	font-size: 1.3em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+p {
+	font-size: 0.9em;
+	font-weight: lighter;
+	color: #495D70;
+}
+
+em {
+	margin: 20px 0;
+	display: block;
+	text-align: center;
+	color: #AAA;
+	font-size: 0.8em;
+}
+
+.form-header p {
+	color: #D1D4D6;
+}
+
+/* -------------------------
+	Form Styles
+------------------------- */
+
+form {
+	padding: 0 5%;
+	border: 0;
+	max-width: 667px;
+	margin: 0 auto;
+}
+
+fieldset {
+	border: 0;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+}
+
+.contact {
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+
+.form-header {
+	text-align: center;
+	padding: 20px 0;
+	border-bottom: 4px solid #2D3945;
+	margin-bottom: 3px;
+}
+
+form h2 {
+	padding: 20px 0;
+}
+
+.form-header h2 {
+	padding-top: 5px;
+}
+
+label {
+	padding: 10px 0;
+	font-size: 0.9em;
+	color: #495D70;
+}
+
+.contact label,
+select,
+.contact input,
+.newsletter textarea,
+input[type="submit"] {
+	display: block;
+	width: 100%;
+}
+
+#zip {
+	width: 50%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="date"],
+textarea {
+	padding: 15px 3%;
+	border: 0;
+	background-color: #EFF0F1;
+	border-radius: 5px;
+}
+
+::-webkit-input-placeholder {
+   text-align: right;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: right;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: right;  
+}
+
+:-ms-input-placeholder {  
+   text-align: right; 
+}
+
+input[type="color"] {
+	width: 150px;
+	height: 50px;
+}
+
+textarea {
+	margin-top: 20px;
+}
+
+/* -------------------------
+	Checkbox Styles
+------------------------- */
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label:before {
+    content: '\00a0';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    font-family: 'Arial Unicode MS';
+    background-color: #EFF0F1;
+    border: 2px solid #fff;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 2% 10px 0;
+    border-radius: 20%;
+}   
+    
+input[type="checkbox"]:checked + label:before {
+    content: '\2714';
+    border: 2px solid #2D3945;
+}
+
+/* -------------------------
+	Radio Button Styles
+------------------------- */
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label:before {
+    content: '\00a0';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    font-family: 'Arial Unicode MS';
+    background-color: #EFF0F1;
+    border: 2px solid #fff;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 2% 10px 0;
+    border-radius: 50%;
+}   
+    
+input[type="radio"]:checked + label:before {
+    content: '\25CF';
+    color: #2D3945;
+    border: 2px solid #2D3945;
+}
+
+/* -------------------------
+	Input Styles
+------------------------- */
+
+input:focus,
+textarea:focus {
+	outline: none;
+	border: 2px solid #2D3945;
+}
+
+input:not(:focus):invalid {
+  border: 2px solid red;
+  border-radius: 5px;
+  color: red;
+}
+
+input[type="submit"] {
+	background: #4EBBB5;
+	color: #fff;
+	font-size: 1.1em;
+	border: 0;
+	border-radius: 5px;
+	padding: 20px 0;
+}
+
+
+
+/* -------------------------
+	Media Queries
+------------------------- */
+
+@media screen and (min-width: 667px) {
+	
+	.contact label {
+		display: inline-block;
+		width: 24%;
+		margin-bottom: 20px;
+	}
+
+	.contact input,
+	select {
+		display: inline-block;
+		width: 74%;
+	}
+
+	input[type="color"] {
+		height: 25px;
+		width: 30%;
+	}
+
+	#zip {
+		width: 30%;
+	}
+}
