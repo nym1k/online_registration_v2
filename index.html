@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>The Code Review - Online Registration</title>
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/styles.css">
@@ -24,27 +25,27 @@
 			    </div>
 				<div>
 					<label for="name">Full Name</label>
-					<input type="text" id="name" placeholder="Required" pattern="[a-zA-Z ]+" />
+					<input type="text" id="name" name="name" placeholder="Required" pattern="[a-zA-Z ]+" />
 				</div>
 				<div>
 					<label for="email">Email Address</label>
-					<input type="email" id="email" placeholder="Required" />
+					<input type="email" id="email" name="email" placeholder="Required" />
 				</div>
 				<div>
 					<label for="phone">Phone Number</label>
-					<input type="tel" id="phone" placeholder="e.g. 01223 456789" />
+					<input type="tel" id="phone" name="phone" placeholder="e.g. 01223 456789" />
 				</div>
 				<div>
 					<label for="addr">Street Address</label>
-					<input type="text" id="addr" placeholder="e.g. 1 Example Street" />
+					<input type="text" id="addr" name="addr" placeholder="e.g. 1 Example Street" />
 				</div>
 				<div>
 					<label for="city">City</label>
-					<input type="text" id="city" placeholder="e.g. London" />
+					<input type="text" id="city" name="city" placeholder="e.g. London" />
 				</div>
 				<div>
 					<label for="state">State</label>
-					<select id="state" >
+					<select id="state" name="state" >
 			  			<option value="solid">Solid</option>
 			  			<option value="liquid">Liquid</option>
 			  			<option value="gas">Gas</option>
@@ -53,15 +54,15 @@
 			  	</div>
 				<div>
 					<label for="zip">Zip Code</label>
-					<input type="text" id="zip" />
+					<input type="text" id="zip" name="zip" />
 				</div>
 				<div>
 					<label for="color">Favourite Colour</label>
-					<input type="color" id="color" />
+					<input type="color" id="color" name="color" />
 				</div>
 				<div>
 					<label for="dob">Date of Birth</label>
-					<input type="date" id="dob" />
+					<input type="date" id="dob" name="dob" />
 				</div>
 			</fieldset>
 			<fieldset class="newsletter">
@@ -87,10 +88,10 @@
 			    </div>
 			    <div>
 			    	<label>Other topics you'd like to hear about</label>
-			    	<textarea rows="3" placeholder="Type here"></textarea>
+			    	<textarea rows="3" placeholder="Type here" name="textarea"></textarea>
 			    </div>
 			</fieldset>	    
-			<input type="submit" value="Sign Up" />
+			<input type="submit" value="Sign Up" name="submit" />
 		</form>
 	</div>
 	<em>Copyright The Code Review</em>
